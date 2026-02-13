@@ -50,6 +50,7 @@ const venueGroups = [
     gradient: "from-neon-blue to-indigo-400",
     icon: "from-blue-500/20 to-indigo-500/20",
     locations: [
+      { name: "복현동", desc: "경북대 인근 유흥 상권" },
       { name: "칠곡 일대", desc: "북구 지역 주점 밀집" },
     ],
   },
