@@ -511,13 +511,20 @@ body {
   opacity: 0.35;
 }
 
-/* ========== ROOM IMAGE CARDS ========== */
+/* ========== MARQUEE SLIDE ========== */
 
-.room-image-card {
-  opacity: 0;
-  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  /* 이미지가 없을 때 플레이스홀더 배경 */
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.03), rgba(0, 0, 0, 0.1));
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 25s linear infinite;
+  width: max-content;
 }
 
 /* ========== MOBILE ========== */

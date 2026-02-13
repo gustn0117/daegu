@@ -50,7 +50,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-4">
-              대구 주점, 대구 바의 모든 것
+              대구 다국적의 모든것
               <br />
               가격, 위치, 영업시간 안내
             </p>

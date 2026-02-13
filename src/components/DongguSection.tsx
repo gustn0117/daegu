@@ -34,7 +34,7 @@ const systemTypes = [
   },
 ];
 
-const dongguPricing = [
+const pricing = [
   {
     category: "기본 가격",
     badge: "기본",
@@ -68,19 +68,19 @@ export default function DongguSection() {
   const [activeTab, setActiveTab] = useState("intro");
 
   return (
-    <section id="donggu" className="py-24 px-4 relative overflow-hidden">
+    <section id="suseong" className="py-24 px-4 relative overflow-hidden">
       {/* Bg */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-accent/[0.02] rounded-full blur-[120px]" />
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-neon-purple/[0.02] rounded-full blur-[100px]" />
 
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <span className="section-badge mb-6 inline-flex">DAEGU DONGGU</span>
+          <span className="section-badge mb-6 inline-flex">DAEGU SUSEONG</span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-5">
-            대구 동구 <span className="gradient-text">주점</span>
+            대구 수성구 <span className="gradient-text">주점</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            동대구역이라는 지리적 특성으로 출장객 비율이 높으며, 다국적 주점과 한국식 주점 모두 높은 수준을 자랑합니다.
+            대구 대표 유흥 상권인 수성구, 높은 수준의 서비스와 다양한 주점이 밀집되어 있습니다.
           </p>
         </div>
 
@@ -109,7 +109,7 @@ export default function DongguSection() {
           {/* Intro */}
           {activeTab === "intro" && (
             <div className="space-y-8">
-              {/* 대표 이미지 - /public/images/image.png 교체 가능 */}
+              {/* 대표 이미지 */}
               <div className="relative w-full aspect-[16/7] rounded-2xl overflow-hidden group">
                 <div
                   className="absolute inset-0 bg-cover bg-center animate-ken-burns transition-transform duration-700 group-hover:scale-105"
@@ -119,21 +119,21 @@ export default function DongguSection() {
                 <div className="absolute inset-0 bg-gradient-to-r from-dark-900/40 to-transparent" />
                 <div className="absolute bottom-4 left-5 sm:bottom-6 sm:left-8">
                   <span className="px-3 py-1 text-[10px] font-bold bg-primary/20 text-primary border border-primary/30 rounded-full backdrop-blur-sm">
-                    DAEGU DONGGU
+                    DAEGU SUSEONG
                   </span>
-                  <h4 className="text-white font-bold text-lg sm:text-xl mt-2">대구 동구 프리미엄 주점</h4>
+                  <h4 className="text-white font-bold text-lg sm:text-xl mt-2">대구 수성구 프리미엄 주점</h4>
                 </div>
               </div>
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-5 flex items-center gap-3">
                   <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full" />
-                  대구 동구 주점 소개
+                  대구 수성구 주점 소개
                 </h3>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  대구 동구 주점은 동대구역이라는 지리적 특성으로 인해 다른 지역과 비교했을때 출장객의 비율이 높습니다.
-                  그러므로 다국적 주점, 외국인 주점이 활성화 되어 있고 한국식 주점 또한 높은 수준을 자랑하기 때문에
-                  실속과 다양한 선택지를 원하는 출장객들에게 동대구역 주점들이 많은 사랑을 받고 있습니다.
+                  대구 수성구 주점은 대구에서 가장 큰 유흥 상권으로, 황금동과 중동을 중심으로 다양한 주점이 밀집되어 있습니다.
+                  한국식 주점, 다국적 주점, 북한식 주점 등 모든 유형의 주점이 높은 수준으로 운영되고 있어
+                  대구 주점을 찾는 분들에게 가장 인기 있는 지역입니다.
                 </p>
               </div>
 
@@ -166,7 +166,7 @@ export default function DongguSection() {
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-white flex items-center gap-3">
                 <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full" />
-                대구 동구 주점 시스템
+                대구 수성구 주점 시스템
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                 {systemTypes.map((type) => (
@@ -190,12 +190,12 @@ export default function DongguSection() {
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-white flex items-center gap-3">
                 <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full" />
-                대구 동구 주점 영업시간
+                대구 수성구 주점 영업시간
               </h3>
               <div className="flex items-center justify-center gap-8 sm:gap-16 py-12 rounded-2xl bg-white/[0.02] border border-white/[0.04]">
                 <div className="text-center">
                   <p className="text-[10px] text-gray-600 mb-3 tracking-widest uppercase">Open</p>
-                  <p className="text-primary text-4xl sm:text-5xl font-bold font-display neon-text">PM 9:00</p>
+                  <p className="text-primary text-4xl sm:text-5xl font-bold font-display neon-text">PM 8:00</p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
                   <div className="w-12 h-px bg-gradient-to-r from-primary/30 to-accent/30" />
@@ -204,11 +204,11 @@ export default function DongguSection() {
                 </div>
                 <div className="text-center">
                   <p className="text-[10px] text-gray-600 mb-3 tracking-widest uppercase">Close</p>
-                  <p className="text-accent text-4xl sm:text-5xl font-bold font-display">AM 4:00</p>
+                  <p className="text-accent text-4xl sm:text-5xl font-bold font-display">AM 5:00</p>
                 </div>
               </div>
               <p className="text-gray-400 text-center text-lg">
-                저녁 9시부터 새벽 4시까지 운영되며, 출장객들과 주변 주민들이 많이 이용합니다.
+                저녁 8시부터 새벽 5시까지 운영되며, 대구에서 가장 긴 영업시간을 자랑합니다.
               </p>
             </div>
           )}
@@ -218,16 +218,16 @@ export default function DongguSection() {
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-white flex items-center gap-3">
                 <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full" />
-                대구 동구 주점 위치
+                대구 수성구 주점 위치
               </h3>
               <p className="text-gray-300 leading-relaxed text-lg">
-                대구 동구 주점의 위치는 다양한 곳에서 영업중입니다. 대표적으로 동대구역 주점, 대구 신천동 주점 등
-                대구 동구 주점은 다양한 위치에서 영업중이므로 동구 어디에 계시던 이용 할 수 있는 주점들이 많습니다.
+                대구 수성구 주점은 황금동과 중동을 중심으로 밀집되어 있습니다.
+                수성구는 대구 대표 유흥 상권으로 접근성이 좋고 다양한 업종의 주점들이 운영되고 있습니다.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {[
-                  { area: "동대구역", desc: "교통 접근성 최고, 출장객 선호" },
-                  { area: "신천동", desc: "다양한 코스의 주점 밀집" },
+                  { area: "황금동", desc: "수성구 대표 주점 밀집 지역" },
+                  { area: "중동", desc: "다양한 유흥업소 밀집" },
                 ].map((loc) => (
                   <div key={loc.area} className="flex items-center gap-5 p-6 rounded-2xl bg-white/[0.02] border border-white/[0.04] hover:border-primary/20 transition-colors group">
                     <div className="p-4 rounded-xl bg-primary/[0.08] group-hover:bg-primary/15 transition-colors">
@@ -250,10 +250,10 @@ export default function DongguSection() {
             <div className="space-y-8">
               <h3 className="text-2xl font-bold text-white flex items-center gap-3">
                 <div className="w-1 h-8 bg-gradient-to-b from-primary to-accent rounded-full" />
-                대구 동구 주점 코스 및 가격
+                대구 수성구 주점 코스 및 가격
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                {dongguPricing.map((cat) => (
+                {pricing.map((cat) => (
                   <div key={cat.category} className="rounded-2xl bg-white/[0.02] border border-white/[0.05] overflow-hidden hover:border-primary/15 transition-colors">
                     <div className="flex items-center justify-between p-5 border-b border-white/[0.04]">
                       <h4 className="text-white font-bold">{cat.category}</h4>

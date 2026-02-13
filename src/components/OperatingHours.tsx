@@ -67,42 +67,39 @@ export default function OperatingHours() {
           {hoursData.map((item) => (
             <div
               key={item.district}
-              className={`glass-card rounded-2xl p-6 ${
+              className={`glass-card rounded-2xl px-5 py-4 ${
                 item.highlight ? "neon-border" : ""
               }`}
             >
               {/* Header */}
-              <div className="flex items-start justify-between mb-5">
+              <div className="flex items-center justify-between mb-3">
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-1">{item.district}</h3>
-                  <p className="text-gray-500 text-sm">{item.areas}</p>
+                  <h3 className="text-lg font-bold text-white">{item.district}</h3>
+                  <p className="text-gray-500 text-xs">{item.areas}</p>
                 </div>
                 {item.highlight && (
-                  <span className="px-3 py-1.5 bg-primary/15 text-primary text-xs font-bold rounded-full border border-primary/20 neon-text">
+                  <span className="px-2.5 py-1 bg-primary/15 text-primary text-xs font-bold rounded-full border border-primary/20 neon-text">
                     인기
                   </span>
                 )}
               </div>
 
-              {/* Divider */}
-              <div className="h-px bg-gradient-to-r from-transparent via-white/[0.06] to-transparent my-5" />
-
               {/* Times */}
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between pt-3 border-t border-white/[0.06]">
                 <div className="text-center flex-1">
-                  <p className="text-[10px] text-gray-600 mb-2 tracking-widest uppercase">Open</p>
-                  <p className="text-primary font-bold text-xl font-display">{item.open}</p>
+                  <p className="text-[10px] text-gray-600 mb-1 tracking-widest uppercase">Open</p>
+                  <p className="text-primary font-bold text-lg font-display">{item.open}</p>
                 </div>
 
-                <div className="flex items-center gap-2 text-gray-700 px-4">
-                  <div className="w-6 h-px bg-gradient-to-r from-primary/30 to-transparent" />
-                  <div className="w-2 h-2 rounded-full border border-primary/30" />
-                  <div className="w-6 h-px bg-gradient-to-l from-accent/30 to-transparent" />
+                <div className="flex items-center gap-2 text-gray-700 px-3">
+                  <div className="w-5 h-px bg-gradient-to-r from-primary/30 to-transparent" />
+                  <div className="w-1.5 h-1.5 rounded-full border border-primary/30" />
+                  <div className="w-5 h-px bg-gradient-to-l from-accent/30 to-transparent" />
                 </div>
 
                 <div className="text-center flex-1">
-                  <p className="text-[10px] text-gray-600 mb-2 tracking-widest uppercase">Close</p>
-                  <p className="text-accent font-bold text-xl font-display">{item.close}</p>
+                  <p className="text-[10px] text-gray-600 mb-1 tracking-widest uppercase">Close</p>
+                  <p className="text-accent font-bold text-lg font-display">{item.close}</p>
                 </div>
               </div>
             </div>

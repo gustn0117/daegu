@@ -19,13 +19,13 @@ export default function Home() {
       <Hero />
 
       <div className="relative z-10">
+        <RoomShowcase />
+
         <div className="section-divider max-w-md mx-auto" />
         <OperatingHours />
 
         <div className="section-divider max-w-md mx-auto" />
         <Venues />
-
-        <RoomShowcase />
 
         <div className="section-divider max-w-md mx-auto" />
         <Pricing />

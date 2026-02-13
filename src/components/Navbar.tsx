@@ -4,11 +4,10 @@ import { useState, useEffect } from "react";
 
 const navLinks = [
   { label: "Home", href: "#hero" },
-  { label: "대구 가이드", href: "#guide" },
   { label: "영업시간", href: "#hours" },
   { label: "이용가능업소", href: "#venues" },
   { label: "가격표", href: "#pricing" },
-  { label: "동구 주점", href: "#donggu" },
+  { label: "수성구", href: "#suseong" },
   { label: "문의", href: "#contact" },
 ];
 

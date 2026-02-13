@@ -5,12 +5,20 @@ export default function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Animated Background - z-0 so it stays behind navbar */}
       <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* Background photo - 은은하게 */}
+        <div
+          className="absolute inset-0 bg-contain bg-top bg-no-repeat opacity-60"
+          style={{ backgroundImage: "url(/images/background.png)" }}
+        />
+        {/* Dark overlay on photo */}
+        <div className="absolute inset-0 bg-gradient-to-b from-dark-900/20 via-dark-900/50 to-dark-900" />
+
         {/* Base gradient */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 80% 60% at center, rgba(0,230,118,0.08) 0%, transparent 50%), radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0,188,212,0.06) 0%, transparent 40%), radial-gradient(ellipse 60% 40% at 20% 80%, rgba(131,56,236,0.04) 0%, transparent 40%), linear-gradient(180deg, #050508 0%, #0d0d14 50%, #050508 100%)",
+              "radial-gradient(ellipse 80% 60% at center, rgba(0,230,118,0.08) 0%, transparent 50%), radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0,188,212,0.06) 0%, transparent 40%), radial-gradient(ellipse 60% 40% at 20% 80%, rgba(131,56,236,0.04) 0%, transparent 40%), linear-gradient(180deg, rgba(5,5,8,0.6) 0%, rgba(13,13,20,0.4) 50%, rgba(5,5,8,0.8) 100%)",
           }}
         />
 
@@ -66,11 +74,14 @@ export default function Hero() {
         </div>
 
         <p className="text-gray-400 text-base sm:text-lg mb-2 animate-fade-in-up delay-400">
-          대구 주점, 대구 바의 모든 것
+          대구 다국적의 모든것
         </p>
-        <h2 className="text-2xl sm:text-4xl font-bold mb-14 animate-fade-in-up delay-400">
+        <h2 className="text-2xl sm:text-4xl font-bold mb-4 animate-fade-in-up delay-400">
           대구 <span className="gradient-text">프리미엄</span> 룸
         </h2>
+        <p className="text-gray-400 text-base sm:text-lg mb-14 animate-fade-in-up delay-500">
+          김실장 <a href="tel:01096802579" className="text-primary font-bold hover:underline">010-9680-2579</a>
+        </p>
 
         {/* Pricing Table */}
         <div className="glass rounded-2xl p-6 sm:p-8 max-w-md mx-auto animate-fade-in-up delay-500 neon-border">
@@ -101,40 +112,44 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* CTA Button */}
-        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up delay-600">
-          <a
-            href="#contact"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-accent text-black font-bold rounded-full hover:shadow-neon-lg transition-all duration-300 transform hover:scale-105 animate-pulse-glow"
-          >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              />
-            </svg>
-            010-9680-2579 전화문의
-            <svg
-              className="w-4 h-4 transition-transform group-hover:translate-x-1"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
+        {/* Phone Number */}
+        <div className="mt-12 animate-fade-in-up delay-600">
+          <p className="text-2xl sm:text-3xl font-bold text-white mb-6 tracking-wide">
+            <span className="text-primary">010-9680-2579</span>
+          </p>
 
-          <a
-            href="#guide"
-            className="inline-flex items-center gap-2 px-6 py-4 text-gray-400 hover:text-primary border border-white/10 hover:border-primary/30 rounded-full transition-all duration-300 hover:bg-primary/5"
-          >
-            둘러보기
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </a>
+          {/* CTA Buttons */}
+          <div className="flex items-center justify-center gap-3">
+            <a
+              href="tel:01096802579"
+              className="group inline-flex items-center gap-2 px-7 py-3.5 bg-gradient-to-r from-primary to-accent text-black font-bold rounded-full hover:shadow-neon-lg transition-all duration-300 transform hover:scale-105"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                />
+              </svg>
+              전화문의
+            </a>
+
+            <a
+              href="sms:01096802579"
+              className="group inline-flex items-center gap-2 px-7 py-3.5 border border-primary/40 text-primary font-bold rounded-full hover:bg-primary/10 hover:border-primary/60 transition-all duration-300 transform hover:scale-105"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                />
+              </svg>
+              문자문의
+            </a>
+          </div>
         </div>
       </div>
 
