@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import OperatingHours from "@/components/OperatingHours";
 import Venues from "@/components/Venues";
 import RoomShowcase from "@/components/RoomShowcase";
-import Pricing from "@/components/Pricing";
 import DongguSection from "@/components/DongguSection";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -26,9 +25,6 @@ export default function Home() {
 
         <div className="section-divider max-w-md mx-auto" />
         <Venues />
-
-        <div className="section-divider max-w-md mx-auto" />
-        <Pricing />
 
         <div className="section-divider max-w-md mx-auto" />
         <DongguSection />

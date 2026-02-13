@@ -6,7 +6,6 @@ const navLinks = [
   { label: "Home", href: "#hero" },
   { label: "영업시간", href: "#hours" },
   { label: "이용가능업소", href: "#venues" },
-  { label: "가격표", href: "#pricing" },
   { label: "수성구", href: "#suseong" },
   { label: "문의", href: "#contact" },
 ];
