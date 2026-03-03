@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  icons: {
-    icon: "/icon.svg",
-  },
   title: "DAEGU ROOM - 대구 다국적 주점 | 룸싸롱 | 외국인클럽 | 노래방",
   description:
     "대구 다국적의 모든것 - 다국적주점, 다국적클럽, 러시아주점, 룸싸롱, 외국인클럽, 태국노래방, 베트남노래방, 필리핀노래방. 수성구·달서구·서구·중구·북구 지역별 가격, 위치, 영업시간 안내. 회식, 모임 장소 추천.",
