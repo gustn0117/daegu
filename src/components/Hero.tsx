@@ -93,7 +93,7 @@ export default function Hero() {
 
           <div className="space-y-0 divide-y divide-white/[0.06]">
             {[
-              { people: "1인", price: "210,000" },
+              { people: "1인", price: "220,000" },
               { people: "2인부터", price: "1인 170,000" },
             ].map((item, i) => (
               <div

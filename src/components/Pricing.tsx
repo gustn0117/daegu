@@ -7,7 +7,7 @@ const pricingCategories = [
     badge: "BASIC",
     badgeColor: "bg-primary/15 text-primary border-primary/20",
     items: [
-      { label: "1인", price: "210,000원" },
+      { label: "1인", price: "220,000원" },
       { label: "2인부터 (1인당)", price: "170,000원" },
     ],
     featured: true,
