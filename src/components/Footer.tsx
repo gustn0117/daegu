@@ -12,18 +12,18 @@ const districtLinks = [
 ];
 
 const tags = [
-  "대구 주점",
-  "대구 레깅스룸",
-  "대구 셔츠룸",
-  "수성구 주점",
-  "동대구역 주점",
-  "대구 다국적 주점",
-  "대구 외국인 주점",
-  "대구 가라오케",
-  "대구 주점 가격",
+  "대구다국적클럽",
+  "대구다국적룸",
+  "대구룸",
+  "대구 다국적클럽",
+  "대구 다국적룸",
+  "다국적주점",
+  "대구 외국인클럽",
+  "대구 러시아주점",
+  "수성구 다국적클럽",
   "대구 주점 추천",
-  "대구 유흥주점",
   "대구 노래방",
+  "대구 주점 가격",
 ];
 
 export default function Footer() {
@@ -50,9 +50,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-4">
-              대구 다국적의 모든것
+              대구다국적클럽 · 대구다국적룸 · 대구룸
               <br />
-              가격, 위치, 영업시간 안내
+              다국적주점 가격, 위치, 영업시간 안내
             </p>
             <div className="flex items-center gap-2 text-gray-600 text-xs">
               <span className="w-1 h-1 bg-gray-700 rounded-full" />

@@ -66,7 +66,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl sm:text-2xl text-accent/80 font-light mb-4 animate-fade-in-up delay-300 tracking-widest">
-          대구 룸
+          대구다국적클럽
         </p>
 
         <div className="animate-fade-in-up delay-300">
@@ -74,10 +74,10 @@ export default function Hero() {
         </div>
 
         <p className="text-gray-400 text-base sm:text-lg mb-2 animate-fade-in-up delay-400">
-          대구 다국적의 모든것
+          대구다국적룸 · 대구룸 · 다국적주점 전문 안내
         </p>
         <h2 className="text-2xl sm:text-4xl font-bold mb-4 animate-fade-in-up delay-400">
-          대구 <span className="gradient-text">프리미엄</span> 룸
+          대구 <span className="gradient-text">다국적클럽</span> 프리미엄
         </h2>
         <p className="text-gray-400 text-base sm:text-lg mb-14 animate-fade-in-up delay-500">
           김실장 <a href="tel:01096802579" className="text-primary font-bold hover:underline">010-9680-2579</a>

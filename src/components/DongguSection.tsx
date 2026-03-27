@@ -77,10 +77,10 @@ export default function DongguSection() {
         <div className="text-center mb-16">
           <span className="section-badge mb-6 inline-flex">DAEGU SUSEONG</span>
           <h2 className="text-3xl sm:text-4xl font-bold mb-5">
-            대구 수성구 <span className="gradient-text">주점</span>
+            대구 수성구 <span className="gradient-text">다국적클럽</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-            대구 대표 유흥 상권인 수성구, 높은 수준의 서비스와 다양한 주점이 밀집되어 있습니다.
+            대구다국적클럽의 중심, 수성구. 높은 수준의 서비스와 다양한 다국적룸이 밀집되어 있습니다.
           </p>
         </div>
 
